@@ -1,4 +1,67 @@
-<h1>Welcome to the app!</h1>
-<div>[[ Dynamic Remake code goes here]]</div>
-<br><br>
-<a href="https://docs.remaketheweb.com/a-simple-example-app/">Try a simple todo app</a>
+
+<div>
+
+<div object key:my-favorite-image-url="@search">
+  <div>
+    <img target:my-favorite-image-url="@src" src="https://pbs.twimg.com/profile_images/1397140100002172928/bY9Qk7Vr_400x400.png" alt="Proflie picture">
+  </div>
+  <button edit:my-favorite-image-url>Edit image URL</button>
+</div>
+
+
+
+
+
+<div class="name_div">
+  <h1 key:name="@innerText" edit:name> Your Name </h1>
+<div object key:some-multi-line-text="@innerText" edit:some-multi-line-text:textarea>
+  Your bio here
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+<div array key="someSortableItems" sortable>
+  
+  
+  
+<div object key:my-favorite-link-name="@search" key:link="@search">
+  <div  object key:sortable-item-text="@innerText" edit:sortable-item-text draggable="false">
+    <a target:link="@href" href="https://www.link.so/" target="_blank">
+      <span target:my-favorite-link-name="@innerText" class="link">Link one</span>
+    </a>
+  </div>
+  <button edit:my-favorite-link-name edit:link >Edit link</button>
+</div>
+
+<div object key:my-favorite-link-name="@search" key:link="@search">
+  <div  object key:sortable-item-text="@innerText" edit:sortable-item-text draggable="false">
+    <a target:link="@href" href="https://www.link.so/" target="_blank">
+      <span target:my-favorite-link-name="@innerText" class="link">link2</span>
+    </a>
+  </div>
+  
+  <button edit:my-favorite-link-name edit:link>Edit link</button>
+</div>
+
+<div object key:my-favorite-link-name="@search" key:link="@search">
+  <div  object key:sortable-item-text="@innerText" edit:sortable-item-text draggable="false">
+    <a target:link="@href" href="https://www.link.so/" target="_blank">
+      <span target:my-favorite-link-name="@innerText" class="link">link3</span>
+    </a>
+  </div>
+  <button edit:my-favorite-link-name edit:link >Edit link</button>
+</div>
+
+
+</div>
+
+
+
+</div>
